@@ -5,15 +5,15 @@ import (
 	"os"
 )
 
-func getScheme() string {
+func GetScheme() string {
 	return os.Getenv("OUTER_SCHEME")
 }
 
-func getCurrHost() string {
+func GetCurrHost() string {
 	return fmt.Sprintf("%s://%s:%s",
-		getScheme(), os.Getenv("OUTER_HOST"), os.Getenv("OUTER_PORT"))
+		GetScheme(), os.Getenv("OUTER_HOST"), os.Getenv("OUTER_PORT"))
 }
 
-func getSubpath() string {
+func GetSubpath() string {
 	return os.Getenv("SUBPATH")
 }
