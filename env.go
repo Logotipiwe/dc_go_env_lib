@@ -14,6 +14,10 @@ func GetCurrUrl() string {
 		GetScheme(), GetOuterHost(), GetOuterPort())
 }
 
+func GetPathToApp() string {
+	return GetCurrUrl() + GetSubpath()
+}
+
 func GetSubpath() string {
 	return os.Getenv("SUBPATH")
 }
