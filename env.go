@@ -30,6 +30,10 @@ func GetOuterPort() string {
 	return os.Getenv("OUTER_PORT")
 }
 
+func GetContainerPort() string {
+	return os.Getenv("CONTAINER_PORT")
+}
+
 func GetDbHost() string {
 	return os.Getenv("DB_HOST")
 }
