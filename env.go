@@ -29,3 +29,19 @@ func GetOuterHost() string {
 func GetOuterPort() string {
 	return os.Getenv("OUTER_PORT")
 }
+
+func GetDbHost() string {
+	return os.Getenv("DB_HOST")
+}
+
+func GetDbLogin() string {
+	return os.Getenv("DB_LOGIN")
+}
+
+func GetDbPassword() string {
+	return os.Getenv("DB_PASS")
+}
+
+func GetDbName() string {
+	return os.Getenv("DB_NAME")
+}
